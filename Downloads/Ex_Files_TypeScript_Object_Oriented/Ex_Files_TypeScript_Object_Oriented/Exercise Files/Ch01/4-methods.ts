@@ -9,9 +9,15 @@ export class Message {
         this.isSent = false;
     }
 
+    previewMessage(): string {
+        return this.message.slice(0,10).concat('...');
+    }
+
 }
 
 const message = new Message(
     'New Course!!! Just $9.99!!!',
     'Check out our latest course on OOP with TypeScript!'
 );
+
+message.previewMessage();
