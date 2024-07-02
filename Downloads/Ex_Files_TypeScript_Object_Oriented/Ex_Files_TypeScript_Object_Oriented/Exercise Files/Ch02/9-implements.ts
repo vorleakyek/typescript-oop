@@ -12,7 +12,11 @@ export class Animal {
 }
 
 // Derived / Child Class / Same Shape
-export class Dog extends Animal {
+export class Dog implements Animal {
+    age: number;
+    legs: number;
+    name: string; 
+    
     woof(): string {
         return 'WOOF! WOOF! WOOF!';
     }
